@@ -4,9 +4,7 @@ on: [workflow_dispatch]
 
 env:
   ## Sets environment variable
-  {% raw %}
-  MEANING_OF_LIFE: ${{secrets.MEANING_OF_LIFE}}    
-  {% endraw %}
+  MEANING_OF_LIFE: ${{secrets.MEANING_OF_LIFE}} 
 jobs:
   check:
     runs-on: ubuntu-latest
